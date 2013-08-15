@@ -1,0 +1,35 @@
+{
+  "name": "tinymce-emmet-plugin",
+  "version": "0.1.0",
+  "description": "A TinyMCE plugin that provides an HTML editor including all Emmet features",
+  "homepage": "http://github.e-sites.nl/tinymce-emmet-plugin",
+  "author": {
+    "name": "e-sites (Boye Oomens)",
+    "email": "github@e-sites.nl",
+    "web": "http://www.e-sites.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/e-sites/chkFrm.git"
+  },
+  "engines": {
+    "node": "~0.8.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.6.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/e-sites/tinymce-emmet-plugin/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "tinymce",
+    "plugin",
+    "emmet"
+  ]
+}
