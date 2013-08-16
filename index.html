@@ -3,16 +3,58 @@
 	<head>
 		<meta charset="utf-8">
 		<title>TinyMCE: Emmet Plugin</title>
+		<link rel="dns-prefetch" href="//frontend.e-sites.nl">
+		<link rel="prerender" href="http://frontend.e-sites.nl/img/esites.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+		<link rel="stylesheet" href="http://frontend.e-sites.nl/library/min/?g=css&1357562300">
+		<style>
+			#forkongithub a{background:#FF2045;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s; z-index:1031;}#forkongithub a:hover{background:#060;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}
+		</style>
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-18924418-1'],['_setDomainName', '.e-sites.nl'],['_trackPageview'],['_trackPageLoadTime']);(function(b,c){var a=b.createElement(c),d=b.getElementsByTagName(c)[0];a.async=a.src='//www.google-analytics.com/ga.js';d.parentNode.insertBefore(a,d)})(document,'script');</script>
 	</head>
-	<body style="padding:1em;">
-		<h1>TinyMCE: Emmet Plugin</h1>
-		<form method="post">
-		    <textarea id="editor"></textarea>
-		</form>
-		<script src="http://github.e-sites.nl/tinymce/tinymce.min.js"></script>
-		<script src="plugin.min.js"></script>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="/"><img src="http://frontend.e-sites.nl/img/esites.png" alt="e-sites"></a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="http://www.e-sites.nl/bureau.html" hreflang="nl">About</a></li>
+						</ul>
+					</div>
+					<a class="hiring animated" href="http://www.werkenbijesites.nl/" target="_blank">We're hiring!</a>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="padding-top:20px;">
+			<h1>TinyMCE: Emmet Plugin</h1>
+			<blockquote><p>A TinyMCE plugin that provides an HTML editor including all <a href="https://github.com/emmetio/emmet" target="_blank">Emmet</a> features (formerly Zen Coding).</p></blockquote>
+			<span id="forkongithub"><a href="https://github.com/e-sites/tinymce-emmet-plugin">Fork me on GitHub</a></span>
+			<form method="post">
+			    <textarea id="editor"></textarea>
+			</form>
+		</div>
+		<!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if gte IE 9]><!-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<!--<![endif]-->
+
+		<!-- bootstrap js -->
+		<script src="http://frontend.e-sites.nl/library/min/?g=bootstrap&1355489554"></script>
+
+		<!-- tinymce and emmet plugin -->
+		<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+		<script src="plugin.js"></script>
 		<script>
 			tinymce.init({
 				selector: '#editor',

@@ -31,12 +31,24 @@ module.exports = function (grunt) {
 		},
 
 		uglify: {
-			options: {
-				banner: '<%= meta.banner %>\n'
-			},
-			build: {
+			plugin: {
+				options: {
+					banner: '<%= meta.banner %>\n'
+				},
 				files: {
 					'plugin.min.js': ['plugin.js']
+				}
+			},
+			resources: {			
+				files: {
+					'js/codemirror/codemirror.min.js': [
+						'js/codemirror/src/codemirror.js',
+						'js/codemirror/src/css.js',
+						'js/codemirror/src/htmlmixed.js',
+						'js/codemirror/src/javascript.js',
+						'js/codemirror/src/xml.js'
+					],
+					'js/emmet/emmet-extras.min.js': ['js/emmet/src/editor.js', 'js/emmet/src/formatting.js', 'js/emmet/src/init.js']
 				}
 			}
 		}

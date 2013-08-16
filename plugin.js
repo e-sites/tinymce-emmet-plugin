@@ -13,6 +13,8 @@ tinymce.PluginManager.add('emmet', function (editor) {
 
 	'use strict';
 
+	editor.validModes = ['css', 'htmlmixed', 'javascript', 'xml'];
+
 	function showSourceEditor() {
 		editor.windowManager.open({
 			title: "HTML Editor",
@@ -23,9 +25,7 @@ tinymce.PluginManager.add('emmet', function (editor) {
 				{
 					text: 'Ok',
 					subtype: 'primary',
-					onclick: function () {
-						editor.windowManager.close(this);
-					}
+					onclick: 'close'
 				},
 				{
 					text: 'Close',
@@ -34,6 +34,10 @@ tinymce.PluginManager.add('emmet', function (editor) {
 			]
 		});
 	}
+
+	editor.on('init', function() {
+		editor.addShortcut('Ctrl+Alt+E', '', showSourceEditor);
+	});
 
 	editor.addButton('code_emmet', {
 		icon: 'code',
