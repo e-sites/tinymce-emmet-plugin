@@ -1,6 +1,6 @@
 {
   "name": "tinymce-emmet-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A TinyMCE plugin that provides an HTML editor including all Emmet features",
   "homepage": "http://github.e-sites.nl/tinymce-emmet-plugin",
   "author": {
@@ -30,6 +30,7 @@
   "keywords": [
     "tinymce",
     "plugin",
-    "emmet"
+    "emmet",
+    "codemirror"
   ]
 }
